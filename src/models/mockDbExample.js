@@ -125,7 +125,7 @@ const drinks = [
         recorrence: 1,
         category: {
             name: 'bebidas',
-            image: ''
+            image: 'http://192.168.25.43:3000/imgs/bebidas@3x.png'
         }
     }
 ];
