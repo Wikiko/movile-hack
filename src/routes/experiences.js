@@ -2,7 +2,7 @@ const express = require('express');
 const Experience = require('../models/Experience');
 const City = require('../models/City');
 const router = express.Router();
-const { groupBy } = require('ramda');
+const { groupBy, uniq } = require('ramda');
 
 const catchErrorDefault = (error, res) => {
     console.error(error);
@@ -61,7 +61,7 @@ router.get('/home', async (req, res) => {
         const cities = await City.findAll();
         const citiesGrouped = groupByCities(experiences, cities);
         res.json({
-            main: categories,
+            main: uniq(categories),
             highlights,
             cities: citiesGrouped
         });
