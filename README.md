@@ -4,4 +4,4 @@ Back-end mockado as pressas para o movilehack :) - Participande do grupo Lizards
 
 Demo do App - Protótipo -
 
-![Output sample](https://github.com/Wikiko/movile-hack/blob/master/demoperfeito.mp4)
+![Output sample](https://github.com/Wikiko/movile-hack/blob/master/demoperfeito.gif)
